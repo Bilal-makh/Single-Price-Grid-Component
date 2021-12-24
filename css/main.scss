@@ -1,0 +1,115 @@
+@import 'sass/variables';
+@import 'sass/global';
+
+main {
+  width: 750px;
+  box-shadow: 0 5px 10px 10px hsla(0, 0%, 0%, 0.051);
+  border-radius: 10px;
+  overflow: hidden;
+  .join-us {
+    width: 100%;
+    padding: 40px 30px;
+    background-color: white;
+
+    h1 {
+      color: $Cyan;
+      margin-bottom: 1.25rem;
+      font : {
+        size: 2rem;
+        weight: 700px; 
+      }
+
+    @media #{$maxMobile} {
+      font-size: 1.6rem;
+    }
+    }
+    h3 {
+      font-size: 1.5rem;
+      color: $Bright-Yellow;
+      margin-bottom: 0.9375rem;
+      @media #{$maxMobile} {
+        font-size: 1.12rem;
+      }
+    }
+    p {
+      color: $Grayish-Blue;
+      line-height: 1.5;
+    }
+  }
+  article{
+    display: flex;
+    flex-wrap: wrap;
+    color: #FFF;
+    .sub {
+      width: 50%;
+      padding: 40px 30px;
+      background-color: $Cyan;
+      @media #{$maxMobile} {
+        width: 100%;
+      }
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.25rem;
+        @media #{$maxMobile} {
+          font-size: 1.2rem;
+          margin-bottom: .9rem;
+        }
+      }
+      .buy {
+        color: hsl(179, 43%, 75%);
+        display: flex;
+        align-items: center;
+        margin-bottom: .7rem;
+        span {
+          color: #FFF;
+          font-size: 2.8rem;
+          margin-right: 0.25rem;
+          font-weight: 700;
+          @media #{$maxMobile} {
+            font-size: 2rem;
+          }
+        }
+      }
+      & p:last-of-type {
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+        @media #{$maxMobile} {
+          font-size: 1rem;
+        }
+      }
+      button {
+          width: 100%;
+          background-color: $Bright-Yellow;
+          color: #FFF;
+          padding: 15px 30px;
+          margin: auto;
+          border: none;
+          border-radius: 6px;
+          font-size: 1.1rem;
+          font-weight: 700;
+          box-shadow: 0 5px 10px #00000033;
+          cursor: pointer;
+        }
+    }
+    .why-us {
+      width: 50%;
+      padding: 40px 30px;
+      background-color: #4abebd;
+      @media #{$maxMobile} {
+        width: 100%;
+      }
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.25rem;
+        @media #{$maxMobile} {
+          font-size: 1.3rem;
+        }
+      }
+      p {
+        color: $Light-Gray;
+        line-height: 1.3;
+      }
+  
+    }
+  }
+}
